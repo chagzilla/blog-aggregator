@@ -1,0 +1,14 @@
+module github.com/chagzilla/blog-aggregator
+
+go 1.27.3
+
+require internal/config v1.0.0
+require internal/database v1.0.0
+
+require (
+	github.com/google/uuid v1.6.0 // indirect
+	github.com/lib/pq v1.12.3 // indirect
+)
+
+replace internal/config => ./internal/config
+replace internal/database => ./internal/database
